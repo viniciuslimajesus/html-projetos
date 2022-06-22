@@ -16,11 +16,11 @@
    --cor3:#BF7154;
    --cor4:#A63737; */
 
-   --cor0:#E67CC7;
-   --cor1:#C453CF;
-   --cor2:#9446FA;
-   --cor3:#5D2975;
-   --cor4:#DB4D73;
+   --cor0:#E14F91;
+   --cor1:#DB0B68;
+   --cor2:#A80850;
+   --cor3:#5C203B;
+   --cor4:#5C052C;
 
 }
 
@@ -34,6 +34,11 @@ div.top-bar {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: var(--cor4);
+}
+
+div.top-bar a {
+    color: var(--cor4);
 }
 
 header {
@@ -65,13 +70,13 @@ nav.naveg {
 nav.naveg a {
     margin: 10px;
     padding: 5px;
-    color: var(--cor2);
+    color: var(--cor0);
     text-decoration: none;
 }
 
 nav.naveg a:hover {
     border-radius: 5px;
-    color: var(--cor3);
+    color: var(--cor1);
 
 }
 
@@ -114,38 +119,47 @@ div.text p {
     background-color: var(--cor);
 }
 
-section.conteiner {
+section.conteiner-menu {
     width: 100%;
     padding: 20px;
     display: flex;
+
 }
 
 div.btn-menu {
-    width: 180px;
-    height: 180px;
-    margin: 5px;
-    padding: 8px;
-    background-color: var(--cor2);
-    position: relative;
+    width: 260px;
+    height: 230px;
     margin: auto;
-    transition-duration: .5s;
+    padding: 8px;
+    background-color: var(--cor0);
+
+    text-align: center;
+    color:var(--cor4);
 }
 
-div.btn-menu:hover {
+.btn-menu button {
+    padding: 6px;
+    background-color: var(--cor4);
+    border-radius: 20px;
+    border: none;
     cursor: pointer;
-    border-radius: 25px;
-    transition-duration: .3s;
 }
 
 section.list-sabores {
     width: 100vw;
     padding: 15px;
-    background-color: var(--cor2);
+    background-color: var(--cor0);
+    color: var(--cor4);
 }
 
 div.title-list {
     padding: 25px;
     text-align: center;
+   
+}
+div.title-list h3 {
+    font-weight: 700;
+    font-family: 'Dancing Script', cursive;
 }
 
 div.title-list p {
@@ -184,7 +198,7 @@ div.recheios ul {
 
 footer {
     width: 100%;
-    background-color: var(--cor3);
+    background-color: var(--cor2);
 }
 
 footer > ul {
@@ -194,5 +208,5 @@ footer > ul {
 }
 
 div.footer-bar {
-    background-color: var(--cor3);
+    background-color: var(--cor2);
 }
