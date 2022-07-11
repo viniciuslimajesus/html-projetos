@@ -80,13 +80,17 @@ nav.naveg a:hover {
 
 }
 
-.banner {
+section.banner {
     width: 100%;
-    min-height: 500px;
+    min-height: 420px;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+
     background-image: url('../imagens/banne1r.jpg');
     background-position: left center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     position: relative;
 }
 
