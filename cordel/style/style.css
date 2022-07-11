@@ -9,6 +9,11 @@
     font-family: 'Sriracha', cursive;
 }
 
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+}
+
 header {
     width: 100%;
     min-height: 150px;
@@ -27,11 +32,34 @@ header {
 header > h1 {
     font-family:'Passion One', cursive;
     font-size: 2rem;
+    font-variant: small-caps;
 }
 
 header > p > a {
     font-family: 'Passion One', cursive;
     text-decoration: none;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+
+    line-height: 2rem;
+}
+
+section.normal {
+    background-color: #fff;
+}
+
+section.imagem {
+    background-color: rgb(48, 47, 47);
+    color: #fff;
+}
+
+section.imagem > p {
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.212);
 }
 
 footer {
