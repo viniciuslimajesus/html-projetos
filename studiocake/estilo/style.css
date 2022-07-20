@@ -1,5 +1,6 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&display=swap');
 
 * {
     padding: 0;
@@ -13,6 +14,7 @@
     --cor03:#FBB5CF;
     --cor04:#00d084;
     --cor05:#7A7A7A;
+    --cor06:#333333;
 }
 
 body {
@@ -34,6 +36,7 @@ div.top-bar {
 
 .top-bar > p {
     margin-left: 30px;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.05rem;
 }
 
@@ -59,7 +62,7 @@ nav.navegacao {
     width: 100vw;
     min-height: 50px;
 
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
 
     display: flex;
@@ -71,7 +74,118 @@ nav.navegacao {
     text-decoration: none;
 }
 
-article {
+article.sobre {
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.sobre h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    text-align: center;
+    font-size: 2.4rem;
+    color: var(--cor01);
+}
+
+article.sobre p {
     font-weight: 400;
-    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: var(--cor05);
+}
+
+span.destaque {
+    color: #000;
+}
+
+
+section.sabores {
+    width: 100vw;
+    padding: 40px;
+    
+    background-color: var(--cor02);
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+   
+}
+
+.container-massas-recheios {
+    display: flex;
+}
+
+.sabores h2 {
+    padding: 65px 0px 65px 0px;
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: var(--cor01);
+}
+
+.sabores p {
+    color: var(--cor05);
+}
+
+.sabores h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: var(--cor01);
+}
+
+.sabores ul {
+    text-align: justify;
+    list-style-position: inside;
+    
+}
+
+.sabores ul > li {
+    line-height: 30px;
+    color: var(--cor06);
+}
+
+.massas ul {
+   min-width: 300px;
+   margin-left: 50px;
+}
+
+.recheios ul  {
+    
+    columns: 3;
+}
+
+section.orcamento {
+    width: 100vw;
+    min-height: 450px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+
+    background-image: url('../imagens/cupcakes03.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+div.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn button {
+    width: 260px;
+    height: 55px;
+    padding: 15px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: var(--cor01);
+    border-radius: 30px;
+    border: none;
+}
+
+footer {
+    width: 100vw;
+    min-height: 400px;
+    background-color: var(--cor01);
 }
