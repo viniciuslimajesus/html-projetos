@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
 * {
     padding: 0;
@@ -23,7 +24,7 @@ body {
 
 div.top-bar {
     width: 100vw;
-    min-height: 50px;
+    min-height: 45px;
     padding: 5px;
 
     background-color: var(--cor01);
@@ -37,7 +38,6 @@ div.top-bar {
 .top-bar > p {
     margin-left: 30px;
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.05rem;
 }
 
 .top-bar a {
@@ -59,7 +59,7 @@ div.logo {
 }
 
 nav.navegacao {
-    width: 100vw;
+    width: 100%;
     min-height: 50px;
 
     font-family: 'Montserrat', sans-serif;
@@ -71,25 +71,80 @@ nav.navegacao {
 }
 
 .navegacao a {
+    margin-left: 50px;
+    padding-top: 8px;
+    padding-bottom: 30px;
+    font-weight: 500;
     text-decoration: none;
 }
 
+.navegacao a:hover {
+    color: var(--cor02);
+}
+
+.navegacao a:first-child {
+    margin-left: 0;
+}
+
+section.container {
+    width: 100%;
+}
+
+div.banner {
+    width: 100%;
+    min-height: 620px;
+    padding: 20px;
+    background-image: url('../imagens/banner02.png');
+    background-position: left center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.banner-text {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.4rem;
+    text-align: center;
+    color: var(--cor01);
+    position: absolute;
+    left: 830px;
+    bottom: 380px;
+}
+
+.container-top-btn{
+    position: absolute;
+    left: 805px;
+    bottom: -1px;
+}
+
+#banner-btn {
+    width: 200px;
+}
+
 article.sobre {
+    padding: 50px 0 50px 0;
     font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     
 }
 
 .sobre h1 {
+    padding-bottom: 50px;
     font-family: 'Playfair Display', serif;
-    font-weight: 600;
+    font-weight: 700;
     text-align: center;
-    font-size: 2.4rem;
+    font-size: 3.5rem;
     color: var(--cor01);
 }
 
 article.sobre p {
+    font-size: 17px;
     font-weight: 400;
     text-align: center;
+    line-height: 30px;
     color: var(--cor05);
 }
 
@@ -100,7 +155,7 @@ span.destaque {
 
 section.sabores {
     width: 100vw;
-    padding: 40px;
+    padding: 60px 0 60px 0;
     
     background-color: var(--cor02);
     font-family: 'Montserrat', sans-serif;
@@ -108,25 +163,62 @@ section.sabores {
    
 }
 
-.container-massas-recheios {
-    display: flex;
-}
-
 .sabores h2 {
-    padding: 65px 0px 65px 0px;
+    padding: 25px 0 25px 0;
     font-family: 'Playfair Display', serif;
-    font-size: 2rem;
+    font-size: 2.6rem;
+    font-weight: 400;
     color: var(--cor01);
 }
 
+.container-massas-recheios {
+    display: flex;
+    justify-content: center;
+}
+
+div.massas {
+    width: 340px;
+    padding: 10px;
+}
+
+div.recheios {
+    padding: 10px;
+}
+
 .sabores p {
+    padding-bottom: 30px;
     color: var(--cor05);
 }
 
 .sabores h3 {
     font-family: 'Playfair Display', serif;
-    font-size: 1.8rem;
+    font-size: 2rem;
+    font-weight: 400;
     color: var(--cor01);
+}
+
+div.hrow {
+    padding: 25px 0 25px 0;
+}
+
+div.hrow span {
+    position: relative;
+}
+
+div.hrow span::before {
+    position: absolute;
+    content: '';
+    width: 250px;
+    height: 2px;
+    background-color: var(--cor01);
+    bottom: 50%;
+    right: -120px;
+
+}
+
+div.hrow  #row2::before  {
+    width: 650px;
+    right: -330px;
 }
 
 .sabores ul {
@@ -146,7 +238,6 @@ section.sabores {
 }
 
 .recheios ul  {
-    
     columns: 3;
 }
 
@@ -167,21 +258,30 @@ section.orcamento {
     
 }
 
-div.btn {
+div.container-btn{
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.btn button {
+.btn {
     width: 260px;
     height: 55px;
     padding: 15px;
-    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
     color: #fff;
     background-color: var(--cor01);
     border-radius: 30px;
     border: none;
+    cursor: pointer;
+    transition-duration: 0.6s;
+}
+
+.btn:hover {
+    background-color: var(--cor02);
+    color: var(--cor01);
 }
 
 footer {
