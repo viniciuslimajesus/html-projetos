@@ -1,0 +1,39 @@
+@charset "UTDF-8";
+/*Fonte Poppins*/
+@import url('https://fonts.googleapis.com/css2? family= Poppins:ital,wght@0,300;0,400;0,500;1,600 & display=swap');
+/*Configurações gerais*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+:root {
+    --background: #2A2B4A;
+    --cor00: #A84FFF;
+    --cor01: #5A71E3;
+    --cor02: #7A7B8F;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--background);
+    font-family: 'Poppins', sans-serif;
+}
+
+div.alternative button {
+    border-radius: 30px;
+    border: none;
+}
+
+button#facebook-color {
+    background-color: var(--cor01);
+ }
+ button#google-color {
+    background-color: var(--cor00);
+ }
+
+
