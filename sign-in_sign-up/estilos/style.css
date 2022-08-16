@@ -24,9 +24,44 @@ html, body {
     font-family: 'Poppins', sans-serif;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    height: 600px;
+    margin: auto;
+    
+    padding: 15px;
+    background-color: rgb(89, 101, 114);
+}
+
+h1 {
+    padding: 15px 0 15px 0;
+    color: #fff;
+}
+
+div.alternative {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    width: 100%;
+    min-height: 50px;
+    margin: 30px 0 30px 0;
+}
+
 div.alternative button {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 160px;
+    height: 45px;
+    padding: 12px;
     border-radius: 30px;
     border: none;
+    font-size: 1.2em;
+    color: #fff;
 }
 
 button#facebook-color {
@@ -36,4 +71,16 @@ button#facebook-color {
     background-color: var(--cor00);
  }
 
+ form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+ }
 
+ form input {
+    height: 55px;
+    margin-bottom: 28px;
+    border-radius: 30px;
+    border: 2px solid #fff;
+    outline: none;
+ }
