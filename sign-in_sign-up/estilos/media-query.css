@@ -2,8 +2,8 @@
 
 /* Smartphones com telas de ate 580px*/
 @media screen and (max-width: 580px) {
-    body {
-      
+    html, body {
+      overflow: hidden;
     }
 
     main {
@@ -17,18 +17,11 @@
     
     form input {
         width: 380px;
-        padding: 8px;
-        padding-left: 14px;
-
-        background-color: transparent;
         font-size: 1.2em;
         color: #fff;
-        
     }
 
     form input[type="submit"] {
-        height: 65px;
-        background-image: linear-gradient(to right  #A84FFF, #5A71E3);
-        
+        height: 65px;   
     }
 }
