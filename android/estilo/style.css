@@ -127,11 +127,9 @@ p {
     display: flex;
     background-color: var(--cor5);
     box-shadow: inset 3px 4px 25px 2px #000;
-    
 }
 
 iframe {
-    
     margin: auto;
 }
 
@@ -211,5 +209,4 @@ footer {
     p {
         font-size: .8em;
     }
-}
 }
